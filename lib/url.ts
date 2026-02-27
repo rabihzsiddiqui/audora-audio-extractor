@@ -21,7 +21,7 @@ export function isDirectMediaUrl(url: string): boolean {
  * Validates a URL string. Returns null if valid, or an error message.
  */
 export function validateUrl(url: string): string | null {
-  if (!url.trim()) return "Please enter a URL";
+  if (!url.trim()) return "please enter a URL";
 
   try {
     const parsed = new URL(url);
@@ -30,7 +30,7 @@ export function validateUrl(url: string): string | null {
     }
     return null;
   } catch {
-    return "Please enter a valid URL";
+    return "please enter a valid URL";
   }
 }
 
@@ -47,13 +47,13 @@ export async function fetchMediaBlob(
     response = await fetch(url, { mode: "cors" });
   } catch {
     throw new Error(
-      "This link cannot be fetched by your browser. This is usually a CORS restriction. Download the video and use Upload instead."
+      "this link cannot be fetched by your browser. this is usually a CORS restriction. download the video and use upload instead."
     );
   }
 
   if (!response.ok) {
     throw new Error(
-      `Server returned ${response.status}. Download the video and use Upload instead.`
+      `server returned ${response.status}. download the video and use upload instead.`
     );
   }
 
@@ -64,7 +64,7 @@ export async function fetchMediaBlob(
     !contentType.startsWith("application/octet-stream")
   ) {
     throw new Error(
-      "The URL does not point to a media file. Try a direct .mp4 or .webm link."
+      "the URL does not point to a media file. try a direct .mp4 or .webm link."
     );
   }
 

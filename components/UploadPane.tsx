@@ -15,7 +15,7 @@ export default function UploadPane({ onFileSelected, selectedFile }: UploadPaneP
   const handleFile = useCallback(
     (file: File) => {
       if (!isAcceptedVideoFile(file)) {
-        alert(`Unsupported file type. Accepted: ${ACCEPTED_EXTENSIONS.join(", ")}`);
+        alert(`unsupported file type. accepted: ${ACCEPTED_EXTENSIONS.join(", ")}`);
         return;
       }
       onFileSelected(file);
@@ -112,7 +112,7 @@ export default function UploadPane({ onFileSelected, selectedFile }: UploadPaneP
             <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-amber-500/10 border border-amber-500/20">
               <WarningIcon className="w-4 h-4 text-amber-400 shrink-0" />
               <p className="text-xs text-amber-400">
-                Large files may take longer to convert depending on your device.
+                large files may take longer to convert depending on your device.
               </p>
             </div>
           )}

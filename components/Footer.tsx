@@ -15,7 +15,7 @@ export default function Footer() {
               audoRa<span className="text-cyan-400">.</span>
             </Link>
             <p className="text-sm text-zinc-500 max-w-xs">
-              Extract MP3 audio from a video file, locally in your browser.
+              extract MP3 audio from a video file, locally in your browser.
             </p>
           </div>
 
@@ -67,10 +67,10 @@ export default function Footer() {
 
         <div className="border-t border-zinc-800 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-zinc-600">
-            &copy; {new Date().getFullYear()} audoRa. All conversion happens locally in your browser.
+            &copy; {new Date().getFullYear()} audoRa. all conversion happens locally in your browser.
           </p>
           <p className="text-xs text-zinc-600">
-            Only convert content you own or have permission to use.
+            only convert content you own or have permission to use.
           </p>
         </div>
       </div>

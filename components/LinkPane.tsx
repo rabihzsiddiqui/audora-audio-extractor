@@ -50,7 +50,7 @@ export default function LinkPane({ onUrlChange, url }: LinkPaneProps) {
         )}
 
         <p className="text-xs text-zinc-500">
-          Works best with direct media links like .mp4 or .webm. CORS must allow browser access.
+          works best with direct media links like .mp4 or .webm. CORS must allow browser access.
         </p>
       </div>
 
@@ -58,10 +58,10 @@ export default function LinkPane({ onUrlChange, url }: LinkPaneProps) {
       <div className="p-4 rounded-lg bg-zinc-800/30 border border-zinc-700/50">
         <p className="text-xs font-medium text-zinc-400 mb-2">how link mode works</p>
         <ul className="text-xs text-zinc-500 space-y-1 list-disc list-inside">
-          <li>Your browser fetches the media file directly</li>
-          <li>No proxy or server is involved</li>
-          <li>If the server blocks cross-origin requests, the fetch will fail</li>
-          <li>In that case, download the file and use Upload instead</li>
+          <li>your browser fetches the media file directly</li>
+          <li>no proxy or server is involved</li>
+          <li>if the server blocks cross-origin requests, the fetch will fail</li>
+          <li>in that case, download the file and use upload instead</li>
         </ul>
       </div>
     </div>

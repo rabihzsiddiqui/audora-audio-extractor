@@ -104,7 +104,7 @@ export default function ConverterCard() {
 
           {/* Disclaimer */}
           <p className="text-xs text-zinc-600 text-center">
-            Only convert content you own or have permission to use.
+            only convert content you own or have permission to use.
           </p>
         </>
       )}

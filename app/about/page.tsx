@@ -46,15 +46,15 @@ export default function AboutPage() {
                 from a CDN on first use and cached by the browser. after that, conversion works offline.
               </p>
               <p>
-                The conversion pipeline works as follows:
+                the conversion pipeline works as follows:
               </p>
               <ol className="list-decimal list-inside space-y-2 pl-2">
-                <li>You select a file or provide a direct URL to a media file.</li>
-                <li>For uploads: the file is read directly from disk using the File API.</li>
-                <li>For URLs: the browser fetches the resource. CORS must allow the request.</li>
-                <li>The media data is written to ffmpeg&apos;s virtual in-memory filesystem.</li>
+                <li>you select a file or provide a direct URL to a media file.</li>
+                <li>for uploads: the file is read directly from disk using the File API.</li>
+                <li>for URLs: the browser fetches the resource. CORS must allow the request.</li>
+                <li>the media data is written to ffmpeg&apos;s virtual in-memory filesystem.</li>
                 <li>ffmpeg.wasm runs the transcoding with your chosen settings.</li>
-                <li>The output MP3 is read back and offered as a download via a Blob URL.</li>
+                <li>the output MP3 is read back and offered as a download via a Blob URL.</li>
               </ol>
             </div>
           </div>
@@ -66,19 +66,19 @@ export default function AboutPage() {
               {[
                 {
                   title: "performance depends on your device",
-                  desc: "WebAssembly runs at near-native speed, but converting large files is CPU-intensive. A 500 MB file may take several minutes on a mobile device.",
+                  desc: "webAssembly runs at near-native speed, but converting large files is CPU-intensive. a 500 MB file may take several minutes on a mobile device.",
                 },
                 {
                   title: "link mode requires CORS",
-                  desc: "Browsers block cross-origin requests unless the server sends the right headers. Most streaming platforms block this. Use Upload mode for reliable results.",
+                  desc: "browsers block cross-origin requests unless the server sends the right headers. most streaming platforms block this. use upload mode for reliable results.",
                 },
                 {
                   title: "memory usage",
-                  desc: "Both the source and output file are held in memory during conversion. Very large files may exhaust available RAM, especially on mobile.",
+                  desc: "both the source and output file are held in memory during conversion. very large files may exhaust available RAM, especially on mobile.",
                 },
                 {
                   title: "SharedArrayBuffer requirement",
-                  desc: "ffmpeg.wasm requires SharedArrayBuffer, which requires the page to be cross-origin isolated (COOP/COEP headers). These are set in next.config.ts.",
+                  desc: "ffmpeg.wasm requires SharedArrayBuffer, which requires the page to be cross-origin isolated (COOP/COEP headers). these are set in next.config.ts.",
                 },
               ].map((item) => (
                 <div key={item.title} className="flex gap-3 p-4 rounded-lg bg-zinc-900/60 border border-zinc-800">
@@ -97,12 +97,12 @@ export default function AboutPage() {
             <h2 className="text-xl font-semibold text-white mb-4">tech stack</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
               {[
-                ["Next.js 15", "App Router, TypeScript"],
-                ["Tailwind CSS v4", "Styling"],
-                ["ffmpeg.wasm 0.12", "Audio transcoding"],
-                ["@ffmpeg/util", "File helpers"],
-                ["Vitest", "Unit tests"],
-                ["Vercel", "Hosting"],
+                ["Next.js 15", "app router, TypeScript"],
+                ["Tailwind CSS v4", "styling"],
+                ["ffmpeg.wasm 0.12", "audio transcoding"],
+                ["@ffmpeg/util", "file helpers"],
+                ["Vitest", "unit tests"],
+                ["Vercel", "hosting"],
               ].map(([name, desc]) => (
                 <div key={name} className="p-3 rounded-lg bg-zinc-900/60 border border-zinc-800">
                   <p className="text-sm font-medium text-zinc-200">{name}</p>
@@ -117,7 +117,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-lg font-semibold text-white mb-1">open source</h2>
               <p className="text-sm text-zinc-400">
-                audoRa is open source. View the code, report issues, or contribute on GitHub.
+                audoRa is open source. view the code, report issues, or contribute on GitHub.
               </p>
             </div>
             <a

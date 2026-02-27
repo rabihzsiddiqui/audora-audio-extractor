@@ -75,7 +75,7 @@ export function useTranscoder(): TranscoderResult {
 
     setState("loading");
     setStatusText("loading converter...");
-    appendLog("Loading ffmpeg.wasm...");
+    appendLog("loading ffmpeg.wasm...");
 
     const { FFmpeg } = await import("@ffmpeg/ffmpeg");
     const { toBlobURL } = await import("@ffmpeg/util");
@@ -149,7 +149,7 @@ export function useTranscoder(): TranscoderResult {
       try {
         await ffmpeg.exec(args);
       } catch (err) {
-        throw new Error(`Conversion failed: ${String(err)}`);
+        throw new Error(`conversion failed: ${String(err)}`);
       }
 
       appendLog("Reading output...");
@@ -210,10 +210,10 @@ export function useTranscoder(): TranscoderResult {
       try {
         setState("loading");
         setStatusText("fetching media from URL...");
-        appendLog(`Fetching: ${url}`);
+        appendLog(`fetching: ${url}`);
 
         const { blob, filename } = await fetchMediaBlob(url);
-        appendLog(`Fetched ${filename} (${blob.size} bytes)`);
+        appendLog(`fetched ${filename} (${blob.size} bytes)`);
 
         await runConversion(blob, filename, options);
       } catch (err) {
