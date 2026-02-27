@@ -1,6 +1,7 @@
 {
   "name": "audora",
   "version": "0.1.0",
+  "description": "browser-based audio extraction tool — convert video to MP3 locally using ffmpeg.wasm",
   "private": true,
   "scripts": {
     "dev": "next dev",
