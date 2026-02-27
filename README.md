@@ -76,12 +76,14 @@ tests/
 
 ## Portfolio framing
 
-> **audoRa** is a browser-native audio extraction tool I built as a side project.
-> It converts video files to MP3 entirely on-device using ffmpeg.wasm (WebAssembly),
-> with no server involvement. I designed it as a natural extension of my portfolio's
-> design system, adding an aurora gradient accent to the base zinc/indigo palette.
-> The project demonstrates client-side media processing, WebAssembly integration,
-> and a polished UI built with Next.js App Router and Tailwind CSS v4.
+**audoRa** is a browser-native audio extraction tool I built as a side project. As someone 
+who loves editing videos, I have always struggled to find a tool to extract MP3 files from
+videos so I could use them for editing, or just simply for my own listening.
+It converts video files to MP3 entirely on-device using ffmpeg.wasm (WebAssembly),
+with no server involvement. I designed it as a natural extension of my portfolio's
+design system, adding an aurora gradient accent to the base zinc/indigo palette.
+The project demonstrates client-side media processing, WebAssembly integration,
+and a polished UI built with Next.js App Router and Tailwind CSS v4.
 
 ## License
 
