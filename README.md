@@ -6,27 +6,6 @@ audoRa is a client-side audio extraction tool built with Next.js, TypeScript, an
 All processing happens inside the browser using [ffmpeg.wasm](https://github.com/ffmpegwasm/ffmpeg.wasm).
 No files are sent to any server.
 
-## Setup
-
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Run tests
-npm run test
-
-# Lint
-npm run lint
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
 ## How it works
 
 1. You select a video file (Upload tab) or paste a direct media URL (Link tab).
@@ -93,15 +72,6 @@ tests/
   time.test.ts
   validators.test.ts
   url.test.ts
-```
-
-## Deployment
-
-Deploy to Vercel with zero configuration. The COOP/COEP headers in `next.config.ts`
-are required for ffmpeg.wasm to work correctly in production.
-
-```bash
-vercel deploy
 ```
 
 ## Portfolio framing
