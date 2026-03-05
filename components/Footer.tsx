@@ -70,7 +70,15 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} audoRa. all conversion happens locally in your browser.
           </p>
           <p className="text-xs text-zinc-600">
-            only convert content you own or have permission to use.
+            only convert content you own or have permission to use.{" "}
+            <a
+              href="https://rabihs.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-500 hover:text-zinc-300 transition-colors duration-200"
+            >
+              built by rabih.
+            </a>
           </p>
         </div>
       </div>
