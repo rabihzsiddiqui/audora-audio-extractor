@@ -11,9 +11,9 @@
     x="16"
     y="22"
     text-anchor="middle"
-    font-family="Georgia, 'Times New Roman', serif"
+    font-family="'Geist Sans', 'Inter', system-ui, -apple-system, sans-serif"
     font-size="20"
-    font-weight="bold"
+    font-weight="600"
     fill="white"
   >a</text>
 </svg>
