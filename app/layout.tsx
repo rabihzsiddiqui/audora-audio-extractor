@@ -10,7 +10,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "audoRa - browser-based audio extractor",
+  title: "audoRa - audio extractor",
   description:
     "extract MP3 audio from a video file, locally in your browser. no uploads, no servers.",
   keywords: ["audio extractor", "mp3 converter", "browser ffmpeg", "local conversion"],
