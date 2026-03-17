@@ -30,6 +30,7 @@ export default function HomePage() {
                 <span className="bg-gradient-to-r from-emerald-400 via-cyan-400 via-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
                   audoRa
                 </span>
+                <span className="inline-block w-[0.08em] h-[0.08em] ml-[0.04em] align-baseline bg-emerald-400" />
               </h1>
               <p className="text-xl md:text-2xl text-zinc-400 font-light max-w-xl mx-auto leading-relaxed">
                 extract MP3 audio from a video file, locally in your browser.
